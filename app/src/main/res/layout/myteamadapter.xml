@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="3dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/MyTeamPhoto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="5dp"
+                android:src="@mipmap/unknown" />
+
+
+            <ImageView
+                android:id="@+id/MyTeamCircle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@id/MyTeamPhoto"
+                android:layout_alignLeft="@id/MyTeamPhoto"
+                android:layout_alignRight="@id/MyTeamPhoto"
+                android:layout_alignTop="@id/MyTeamPhoto"
+                android:src="@mipmap/online_list" />
+
+        </RelativeLayout>
+
+        <!--android:background="@drawable/img"-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/MyTeamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/action_bar_color"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/MyTeamFullN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FullName"
+                android:textColor="@color/action_bar_color"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/MyTeamShiftStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shift Start"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamShiftEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shift End"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="3dp">
+                    <!--android:paddingLeft="10dp"-->
+
+                    <TextView
+                        android:id="@+id/MyTeamSSTrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 30am"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamSETrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 30pm"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamTeamTrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Big Boss"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamPosTrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bossing Savings"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/MyTeamStatusTrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Azz Zined"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/MyTeamHeart"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="onClickIcon"
+                    android:paddingRight="3dp"
+                    android:src="@drawable/icon_favourite" />
+
+                <ImageView
+                    android:id="@+id/MyTeamMsg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingRight="3dp"
+                    android:src="@drawable/icon_message" />
+
+                <ImageView
+                    android:id="@+id/MyTeamBell"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingRight="3dp"
+                    android:src="@drawable/icon_ping" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_update_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_data"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/tv_update_data_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_update_data"
+                android:text="@string/update_data_details"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_update_freq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_update_data_details"
+                android:paddingLeft="30dp">
+
+                <RadioButton
+                    android:id="@+id/rb_update_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manual" />
+
+                <RadioButton
+                    android:id="@+id/rb_update_automatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/automatic" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/rl_automatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg_update_freq"
+                android:paddingLeft="60dp">
+
+                <TextView
+                    android:id="@+id/tv_time_automatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_automatic" />
+
+                <EditText
+                    android:id="@+id/et_auto_minutes"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_time_automatic"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/et_auto_minutes"
+                    android:layout_toRightOf="@id/et_auto_minutes"
+                    android:paddingBottom="4dp"
+                    android:text="@string/minutes" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_automatic"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_ping_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_divider">
+
+                <TextView
+                    android:id="@+id/tv_set_ping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_ping"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tv_set_ping_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_set_ping"
+                    android:text="@string/set_ping_details"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_default_ping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_set_ping_details"
+                    android:singleLine="false" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_ping_message"
+                android:background="@color/action_bar_color"
+                android:text="@string/update"
+                android:textColor="@color/White" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

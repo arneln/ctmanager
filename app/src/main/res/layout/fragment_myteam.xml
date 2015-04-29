@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:id="@+id/MyTeamList"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/White"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/DepartMent"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight=".4"
+            android:background="#DDDDDD"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:prompt="@string/View" />
+
+        <Spinner
+            android:id="@+id/Status"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight=".6"
+            android:background="#DDDDDD"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:prompt="@string/Views" />
+        <!--android:entries="@array/Status"-->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/MyTeamListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MyTeamList"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

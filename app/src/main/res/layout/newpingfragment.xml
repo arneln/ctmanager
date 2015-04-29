@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#dddddd"
+        android:id="@+id/watatas">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/CheckBoxPing"
+        android:background="#DDDDDD"
+        android:text="         All"
+        android:layout_weight=".7"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/PingPing"
+        android:src="@drawable/icon_ping"
+        android:background="#DDDDDD"
+        android:layout_weight=".3"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListPing"
+        android:layout_below="@+id/watatas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

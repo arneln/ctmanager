@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="3dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkBoxPing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="45dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:paddingLeft="10dp">
+            <ImageView
+                android:id="@+id/PhotoPing"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ic_launcher"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true" />
+            <ImageView
+                android:id="@+id/MyPingCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/PhotoPing"
+                android:layout_alignBottom="@id/PhotoPing"
+                android:scaleType="fitXY"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/NamePing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="watata"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="5dp" />
+
+                <TextView
+                    android:id="@+id/TeamPing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="watata"
+                    android:layout_below="@+id/name"
+                    android:layout_alignLeft="@+id/name"
+                    android:layout_alignStart="@+id/name"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

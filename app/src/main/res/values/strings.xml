@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="okay">Okay</string>
+    <string name="close">Close</string>
+    <string name="retry">Retry</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="manager">manager</string>
+
+    <!--Connection Error-->
+    <string name="server_null">No response from server</string>
+    <string name="server_null_details">The server has no response.
+        It may be down or under maintenance.\nPlease try again later.</string>
+    <!--Main Activity-->
+    <string name="exit_app">Exit App</string>
+    <string name="exit_app_details">Would you like to exit Mobile Manager?</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>dashboard</item>
+        <item>my team</item>
+        <item>ping</item>
+        <item>settings</item>
+        <item>log out</item>
+    </string-array>
+
+    <!--Splash Screen-->
+    <string name="not_connected_internet">Not connected to the internet</string>
+    <string name="not_connected_internet_details">You are not connected to the internet</string>
+    <string name="exit">Exit</string>
+    <string name="go_to_settings">Go to wifi settings</string>
+
+    <!--Log In-->
+    <string name="cloudstaff">CLOUDSTAFF</string>
+    <string name="team_manager">Team Manager</string>
+    <string name="enter_email_pass">Enter your email and password</string>
+    <string name="email_address">email address</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_email_pass">Forgot your password?</string>
+    <string name="enter_pin">Enter your Cloudstaff pin</string>
+    <string name="email_pass_empty">Password and email is empty</string>
+    <string name="email_empty">Email is empty</string>
+    <string name="pass_empty">Password is empty</string>
+    <string name="email_pass_incorrect">Email address or password is incorrect</string>
+    <string name="pin_incorrect">The pin you entered is incorrect</string>
+    <string name="logging_in">Logging in....</string>
+    <string name="log_in_error">Log in error</string>
+    <string name="logged_from_another_device">Log in conflict</string>
+    <string name="password_reset">Password reset</string>
+
+    <!--Log Out-->
+    <string name="loggging_out">Logging out....</string>
+
+    <!--Settings-->
+    <string name="update_data">Update Data</string>
+    <string name="update_data_details">You must be connected to the internet to fetch data from server.</string>
+    <string name="manual">Manual</string>
+    <string name="automatic">Automatic</string>
+    <string name="time_automatic">Set time interval for automatic update. This may affect battery usage.</string>
+    <string name="minutes">minutes</string>
+    <string name="set_ping">Set default Ping! message</string>
+    <string name="set_ping_details">Default message may still be changed upon sending a ping.</string>
+    <string name="update">Update</string>
+
+    <string-array name="Status">
+        <item>None</item>
+        <item>Online Staffs</item>
+        <item>Offline Staffs</item>
+        <item>Assigned Staffs</item>
+        <item>Unassigned Staffs</item>
+        <item>My Favorites</item>
+    </string-array>
+
+    <string name="View">View ALl Teams</string>
+    <string name="Views">▼</string>
+
+    <!--Ping Dialog Box-->
+    <string name="sendp">Send a Ping!</string>
+    <string name="defmsg">Default message here</string>
+    <string name="send">Send</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="sendemail">What\'s your email address?</string>
+    <string name="ping_empty">List Empty</string>
+    <string name="ping_empty_details">No employee is selected for ping.
+        \nPlease select at least one employee to send a ping.</string>
+
+    <!-- Message Dialog -->
+    <string name="sendm">Send a Message</string>
+    <string name="message_empty">Message Empty</string>
+    <string name="message_empty_details">Please add your message for this employee.</string>
+    <string name="message_sending">Sending message to %1$s</string>
+    <string name="message_sent">An email has been sent to %1$s</string>
+
+    <!-- What are you working on Dialog -->
+    <string name="whatwork">What are you working on?</string>
+
+    <!--Ping-->
+    <string name="ping_success">Ping success</string>
+    <string name="sending_ping">Sending your ping....</string>
+
+    <!--Favorite-->
+    <string name="please_wait">Please wait....</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cloudstaff.cstm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".WhatRYouWorkingOn"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"></activity>
+        <activity
+            android:name=".PinActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"></activity>
+        <activity android:name=".utils.ProfileActivity" />
+        <activity android:name=".SendMessage" />
+
+        <receiver android:name=".utils.Alarm" />
+    </application>
+
+</manifest>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/action_bar_color"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_above="@+id/tv_enter_email_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_cloudstaff"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@id/iv_logo"-->
+        <!--android:layout_alignLeft="@id/iv_logo"-->
+        <!--android:layout_alignStart="@id/iv_logo"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:fontFamily="sans-serif-condensed"-->
+        <!--android:text="@string/cloudstaff"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:textColor="@color/White"-->
+        <!--android:textSize="40dp"-->
+        <!--android:textStyle="normal|bold|italic" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_team_manager"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/tv_enter_email_pass"-->
+        <!--android:layout_alignRight="@+id/tv_enter_email_pass"-->
+        <!--android:layout_below="@id/tv_cloudstaff"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="@string/team_manager"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textColor="@color/White"-->
+        <!--android:textSize="18sp" />-->
+
+        <ImageView
+            android:id="@+id/logtop"
+            android:layout_width="300dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_logo"
+            android:layout_marginTop="13dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/login_top" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/logtop"
+            android:background="@color/White"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/et_pass">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/et_email"
+            android:background="@color/White"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/et_pass"
+            android:background="@color/White"
+            android:text="@string/log_in"
+            android:textColor="@color/DarkBlue" />
+
+        <ImageView
+            android:id="@+id/logbot"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_log_in"
+            android:paddingBottom="15dp"
+            android:src="@drawable/login_bottom" />
+
+        <TextView
+            android:id="@+id/tv_enter_email_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/enter_email_pass"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_forgot_email_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logbot"
+            android:layout_centerHorizontal="true"
+            android:text="@string/forgot_email_pass"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White" />
+    </RelativeLayout>
+</ScrollView>

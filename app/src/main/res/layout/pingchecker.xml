@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/PingListAdap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:paddingTop="45dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/checkBoxEmp"
+            android:layout_toRightOf="@id/checkBoxEmp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/MyPingCircle"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignBottom="@id/photo"
+                android:layout_alignLeft="@id/photo"
+                android:layout_alignRight="@id/photo"
+                android:layout_alignTop="@id/photo"
+                android:src="@mipmap/online_list" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="watata"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_alignStart="@+id/name"
+                android:layout_below="@+id/name"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:text="watata" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
